@@ -1,0 +1,211 @@
+body {
+    background-color: rgb(8, 7, 15);
+    margin: 20px;
+}
+
+#title-div{
+    color: white;
+    font-family: sans-serif;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+#title{
+    font-size: 70px;
+    margin: 0 0 20px 0;
+
+}
+
+#title span {
+    color: rgb(32, 159, 53);
+    display: block;
+}
+
+#coment {
+    margin: 0 0 0 40px;
+    font-size: 30px;
+}
+
+#control-panel {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#controls-left {
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#gen-btn{
+    font-size: 25px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0.01em 0.01em rgba(45, 35, 66, 0.4),
+                0px 0.3em 0.7em -0.01em rgba(45, 35, 66, 0.3),
+                inset 0px -0.01em 0px rgba(58, 65, 111, 0.5);
+    background: radial-gradient(100% 100% at 100% 0%, #082214 0%, rgb(32, 159, 53) 100%);
+    text-shadow: 0 0 10px black;
+    font-weight: 500;
+    color: white;
+
+    transition: box-shadow 0.15s ease-in-out, transform 0.5s ease;
+}
+
+#gen-btn:hover {
+    box-shadow: 0px 0.1em 0.2em rgba(45, 35, 66, 0.4),
+                0px 0.4em 0.7em -0.1em rgba(45, 35, 66, 0.3),
+                inset 0px -0.1em 0px #3ce0a9;
+    transform: translateY(-0.1em);
+}
+
+#gen-btn:active {
+    box-shadow:
+        inset 0px 0.1em 0.6em #a2dbb0,
+        0 0 30px #a2dbb0;
+    transform: translateY(0em);
+}
+
+#length-div {
+    display: flex;
+    padding: 15px 20px;
+    border-radius: 10px;
+    width: fit-content;
+    border: #969696 solid 5px;
+}
+
+#length-div header {
+    display: flex;
+    align-items: center;
+}
+
+#length-div h3 {
+    font-family: sans-serif;
+    color: white;
+    margin: 0;
+    line-height: center;
+    font-size: 20px;
+}
+
+#password-length {
+    -moz-appearance: textfield;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 50px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 5px;
+    background-color: #ccc;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+    transition: 300ms ease-in-out;
+    text-align: center;
+}
+
+#password-length::-webkit-inner-spin-button,
+#password-length::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    background: transparent;
+}
+
+#password-length:focus {
+  background-color: white;
+  transform: scale(1.05);
+  box-shadow: 13px 13px 100px #969696,
+             -13px -13px 100px #ffffff;
+}
+
+#controls-right {
+    color: white;
+    font-family: sans-serif;
+    border: #969696 5px solid;
+    border-radius: 15px;
+    padding: 15px 20px;
+}
+
+#controls-right #use-ch {
+    font-size: 25px;
+    margin-top: 0;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+.en-chars {
+    display: flex;
+}
+
+.en-chars input{
+    cursor: pointer;
+}
+
+.en-chars h3 {
+    margin: 0;
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+#passwords{
+    display: flex;
+    width: 720px;
+    justify-content: space-between;
+}
+
+.password-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    background-color: #969696;
+    height: 40px;
+    border-radius: 10px;
+    padding: 5px 10px 5px 20px;
+    cursor: pointer;
+    transition: 
+        box-shadow 200ms ease-out,
+        border 100ms ease-out,
+        background-color 100ms ease-out,
+        transform 100ms ease;
+}
+
+.password-div:hover {
+    background-color: #c8c3c3;
+    border: white solid 3px;
+    box-shadow: 0 0 30px white;
+}
+
+.password-div h3 {
+    margin: 0;
+    width: 250px;
+    font-size: 30px;
+    height: 40px;
+    line-height: 40px;
+    font-family: sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.copy-icon {
+    width: 30px;
+    height: fit-content;
+    opacity: 0;
+    transition: 200ms ease-out;
+}
+
+.password-div:hover .copy-icon {
+    opacity: 100%;
+}
+
+hr{
+    height: 5px;
+    background-color: #969696;
+    border: none;
+    border-radius: 3px;
+}
